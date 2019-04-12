@@ -1,0 +1,86 @@
+[
+    {
+        "namePrefix": "DIAG_0001",
+        "resourceType": "Microsoft.Sql/servers/databases",
+        "hasMetric": true,
+        "logCategories": ["Audit", "SQLSecurityAuditEvents"],
+        "displayName": "Azure SQL"
+    },
+    {
+        "namePrefix": "DIAG_0002",
+        "resourceType": "Microsoft.DataLakeStore/accounts",
+        "hasMetric": true,
+        "logCategories": ["Audit", "Requests"],
+        "displayName": "Azure Data Lake Storage Gen1"
+    },
+    {
+        "namePrefix": "DIAG_0003",
+        "resourceType": "Microsoft.ContainerRegistry/registries",
+        "hasMetric": true,
+        "logCategories": [],
+        "displayName": "Azure Container Registry (ACR)"
+    },
+    {
+        "namePrefix": "DIAG_0004",
+        "resourceType": "Microsoft.ContainerInstance/containerGroups",
+        "hasMetric": true,
+        "logCategories": [],
+        "displayName": "Azure Container Instances (ACI)"
+    },
+    {
+        "namePrefix": "DIAG_0005",
+        "resourceType": "Microsoft.DataFactory/factories",
+        "hasMetric": true,
+        "logCategories": ["ActivityRuns", "PipelineRuns", "TriggerRuns"],
+        "displayName": "Azure Data Factory"
+    },
+    {
+        "namePrefix": "DIAG_0006",
+        "resourceType": "Microsoft.DataLakeAnalytics/accounts",
+        "hasMetric": true,
+        "logCategories": ["Audit", "Requests"],
+        "displayName": "Azure Data Lake Analytics"
+    },
+    {
+        "namePrefix": "DIAG_0007",
+        "resourceType": "Microsoft.ContainerService/managedClusters",
+        "hasMetric": true,
+        "logCategories": ["guard", "kube-apiserver", "kube-controller-manager", "kube-scheduler"],
+        "displayName": "Azure Kubernetes Service (AKS)"
+    },
+    {
+        "namePrefix": "DIAG_0008",
+        "resourceType": "Microsoft.AnalysisServices/servers",
+        "hasMetric": true,
+        "logCategories": ["Engine", "Service"],
+        "displayName": "Azure Analysis Service"
+    },
+    {
+        "namePrefix": "DIAG_0009",
+        "resourceType": "Microsoft.Network/applicationGateways",
+        "hasMetric": true,
+        "logCategories": ["ApplicationGatewayAccessLog", "ApplicationGatewayPerformanceLog", "ApplicationGatewayFirewallLog"],
+        "displayName": "Azure Application Gateway"
+    },
+    {
+        "namePrefix": "DIAG_0010",
+        "resourceType": "Microsoft.StreamAnalytics/streamingjobs",
+        "hasMetric": true,
+        "logCategories": ["Authoring", "Execution"],
+        "displayName": "Azure Stream Analytics"
+    },
+    {
+        "namePrefix": "DIAG_0011",
+        "resourceType": "Microsoft.Automation/automationAccounts",
+        "hasMetric": true,
+        "logCategories": ["JobLogs", "JobStreams", "DscNodeStatus"],
+        "displayName": "Azure Automation Account"
+    },
+    {
+        "namePrefix": "DIAG_0012",
+        "resourceType": "Microsoft.RecoveryServices/Vaults",
+        "hasMetric": false,
+        "logCategories": ["AzureBackupReport", "AzureSiteRecoveryEvents", "AzureSiteRecoveryJobs", "AzureSiteRecoveryProtectedDiskDataChurn", "AzureSiteRecoveryRecoveryPoints", "AzureSiteRecoveryReplicatedItems", "AzureSiteRecoveryReplicationDataUploadRate", "AzureSiteRecoveryReplicationStats"],
+        "displayName": "Azure Recovery Vault"
+    }
+]

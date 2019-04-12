@@ -1,0 +1,16 @@
+[
+    {
+        "namePrefix": "DIAG_0001",
+        "resourceType": "Microsoft.Sql/servers/databases",
+        "hasMetric": true,
+        "logCategories": ["Audit", "SQLSecurityAuditEvents"],
+        "displayName": "Azure SQL"
+    },
+    {
+        "namePrefix": "DIAG_0002",
+        "resourceType": "Microsoft.DataLakeStore/accounts",
+        "hasMetric": true,
+        "logCategories": ["Audit", "Requests"],
+        "displayName": "Azure Data Lake Storage Gen1"
+    }
+]
