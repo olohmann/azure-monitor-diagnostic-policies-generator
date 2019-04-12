@@ -1,9 +1,6 @@
 # Azure Diagnostics Policies with Terraform
 
-## TODO
-
-Make notes about LA workspace scope.
-Diag settings name! 
+This repository provides a very simple Python tool that generates Terraform-based Azure Policy definitions and definition sets. It is an alternative to use ARM templates as defined [here](https://github.com/johnkemnetz/azmon-onboarding/tree/master/policies). Terraform provides a little more flexibility to track policy changes and to validate the current state. In addition, you can use the policy generator to create multiple flavors of the Policy Definitions. For example, one config set that is driving central IT policies (focus on audit & security), and another config set that is full fledged (all data including metrics) for the actual DevOps crew running a service.
 
 ## Repository Structure Overview
 
@@ -45,8 +42,8 @@ The `.env.sh` file will contain extremely sensitive information. Make sure that 
 
 ### TODOs
 
-* Currently, the `terraform` provider requires a custom build from the master branch as the required features have not yet been released in a pre-built binary.
 * This repository mixes code generation and tooling in one place. In future, this should be split.
+* Document the LA workspace scope.
 
 ### References
 
