@@ -1,10 +1,13 @@
 resource "azurerm_policy_definition" "policy_DIAG_0001_Microsoft_Sql" {
   name                = "${var.custom_policies_prefix}_DIAG_0001_Microsoft_Sql"
   policy_type         = "Custom"
-  mode                = "indexed"
+  mode                = "Indexed"
   display_name        = "${var.custom_policies_prefix}_DIAG_0001_Microsoft_Sql"
   description         = "${var.custom_policies_prefix}_DIAG_0001_Microsoft_Sql ${var.deployment_version}"
   management_group_id = "${var.management_group_id}"
+  lifecycle {
+    ignore_changes      = ["metadata"]
+  }
   metadata            = <<METADATA
 { 
     "category": "Monitoring" 

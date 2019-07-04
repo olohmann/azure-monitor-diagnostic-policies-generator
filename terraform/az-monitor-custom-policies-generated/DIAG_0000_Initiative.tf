@@ -4,6 +4,9 @@ resource "azurerm_policy_set_definition" "initiative" {
   display_name        = "${var.initiative_name}"
   description         = "${var.initiative_name} ${var.deployment_version}"
   management_group_id = "${var.management_group_id}"
+  lifecycle {
+    ignore_changes      = ["metadata"]
+  }
   parameters          = <<PARAMETERS
 {
     "diagSettingsName": {
